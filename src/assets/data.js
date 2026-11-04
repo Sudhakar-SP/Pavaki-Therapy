@@ -136,7 +136,7 @@ export const products = [
   {
     title: 'Healing Crystals',
     description: 'Authentic crystals for energy healing, protection, and spiritual growth.',
-    image: 'https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=600&q=80',
+    image: 'https://hips.hearstapps.com/hmg-prod/images/766/articles/2017/01/what-the-hell-are-healing-crystals-1492435441.jpeg?crop=0.636xw:1xh;center,top&resize=1200:*',
   },
   {
     title: 'Rudraksha',
@@ -212,7 +212,7 @@ export const testimonials = [
 export const contactInfo = {
   phone: '+91 9442316257',
   email: 'Pavaki369@gmail.com',
-  address: '123 Wellness Avenue, Spiritual District, Chennai, Tamil Nadu 600001',
+  address: '5/575-3,Abirami Nagar, EB Colony, Collectorate, Dindigul - 624004.',
   whatsapp: '919442316257',
 }
 

@@ -269,7 +269,7 @@ const Contact = () => {
                     Find Us on Google Maps
                   </p>
                   <p className="mt-1 text-xs text-soft-gray leading-relaxed max-w-xs mx-auto">
-                    123 Wellness Avenue, Spiritual District, Chennai, Tamil Nadu 600001
+                    5/575-3,Abirami Nagar, EB Colony, Collectorate, Dindigul - 624004.
                   </p>
                 </div>
               </div>
