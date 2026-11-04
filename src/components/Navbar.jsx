@@ -49,8 +49,8 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 z-50 w-full transition-all duration-500 ${isScrolled
-          ? "bg-[#FAF7F2]/80 border-b border-golden/10 py-3 shadow-md backdrop-blur-lg"
-          : "bg-transparent py-5"
+        ? "bg-white/85 border-b border-blue-200/80 py-3 shadow-md shadow-blue-900/10 backdrop-blur-lg"
+        : "bg-white/50 border-b border-white/40 py-5 backdrop-blur-md"
         }`}
     >
       <div className="container-custom flex items-center justify-between px-4 sm:px-6 lg:px-8">
@@ -72,14 +72,12 @@ const Navbar = () => {
 
           <div className="text-left">
             <span
-              className={`block font-display text-lg font-bold leading-tight tracking-tight transition-colors duration-300 ${isScrolled ? "text-dark-gray" : "text-white"
-                }`}
+              className="block font-display text-lg font-bold leading-tight tracking-tight text-[#0b1437] transition-colors duration-300"
             >
               Pavaki Therapy
             </span>
             <span
-              className={`block text-[10px] font-semibold uppercase tracking-widest transition-colors duration-300 ${isScrolled ? "text-golden" : "text-golden/95"
-                }`}
+              className="block text-[10px] font-bold uppercase tracking-widest text-amber-700 transition-colors duration-300"
             >
               Clinic & Training Center
             </span>
@@ -98,20 +96,16 @@ const Navbar = () => {
                   e.preventDefault();
                   handleNavClick(link.href);
                 }}
-                className={`relative rounded-full px-4 py-2 text-sm font-semibold transition-colors duration-300 focus:outline-none ${isScrolled
-                    ? isActive
-                      ? "text-golden"
-                      : "text-dark-gray hover:text-golden"
-                    : isActive
-                      ? "text-golden"
-                      : "text-white/90 hover:text-golden"
+                className={`relative rounded-full px-4 py-2 text-sm font-semibold transition-colors duration-300 focus:outline-none ${isActive
+                  ? "text-amber-700"
+                  : "text-[#0b1437] hover:text-amber-700"
                   }`}
               >
                 <span className="relative z-10">{link.name}</span>
                 {isActive && (
                   <motion.span
                     layoutId="activeNav"
-                    className="absolute inset-0 rounded-full bg-golden/10 border border-golden/20"
+                    className="absolute inset-0 rounded-full bg-amber-500/15 border border-amber-600/40"
                     transition={{ type: "spring", stiffness: 380, damping: 30 }}
                   />
                 )}
@@ -123,8 +117,7 @@ const Navbar = () => {
         {/* Mobile Menu Icon Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className={`rounded-xl p-2 transition-all duration-300 hover:bg-white/10 lg:hidden focus:outline-none ${isScrolled ? "text-dark-gray" : "text-white"
-            }`}
+          className="rounded-xl p-2 text-[#0b1437] transition-all duration-300 hover:bg-blue-900/10 lg:hidden focus:outline-none"
           aria-label={isOpen ? "Close menu" : "Open menu"}
         >
           {isOpen ? <HiX size={26} /> : <HiMenu size={26} />}
@@ -139,7 +132,7 @@ const Navbar = () => {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.35, ease: "easeInOut" }}
-            className="absolute top-full left-0 w-full overflow-hidden bg-[#FAF7F2]/95 border-b border-golden/10 shadow-xl backdrop-blur-lg lg:hidden"
+            className="absolute top-full left-0 w-full overflow-hidden bg-white/95 border-b border-blue-200/80 shadow-xl backdrop-blur-lg lg:hidden"
           >
             <div className="flex flex-col gap-1.5 px-6 py-8">
               {navLinks.map((link, i) => {
@@ -157,12 +150,12 @@ const Navbar = () => {
                     exit={{ opacity: 0, x: -20 }}
                     transition={{ delay: i * 0.05 }}
                     className={`rounded-2xl px-5 py-3.5 text-base font-bold transition-all duration-300 flex items-center justify-between border ${isActive
-                        ? "bg-golden/10 border-golden/20 text-golden"
-                        : "bg-white/40 border-white/60 text-dark-gray hover:bg-white/80 hover:text-golden"
+                      ? "bg-amber-500/15 border-amber-600/40 text-amber-700"
+                      : "bg-blue-50 border-blue-200/70 text-[#0b1437] hover:bg-blue-100 hover:text-amber-700"
                       }`}
                   >
                     <span>{link.name}</span>
-                    {isActive && <span className="w-1.5 h-1.5 rounded-full bg-golden" />}
+                    {isActive && <span className="w-1.5 h-1.5 rounded-full bg-amber-600" />}
                   </motion.a>
                 );
               })}

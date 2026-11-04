@@ -211,7 +211,7 @@ export const testimonials = [
 
 export const contactInfo = {
   phone: '+91 9442316257',
-  email: '[EMAIL_ADDRESS]',
+  email: 'Pavaki369@gmail.com',
   address: '123 Wellness Avenue, Spiritual District, Chennai, Tamil Nadu 600001',
   whatsapp: '919442316257',
 }

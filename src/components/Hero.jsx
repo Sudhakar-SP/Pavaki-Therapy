@@ -112,8 +112,8 @@ const Hero = () => {
           >
             {/* Golden Badge */}
             <motion.div variants={itemVariants} className="inline-block">
-              <div className="inline-flex items-center gap-2 rounded-full border border-golden/30 bg-golden/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-golden backdrop-blur-md">
-                <span className="w-1.5 h-1.5 rounded-full bg-golden animate-pulse" />
+              <div className="inline-flex items-center gap-2 rounded-full border border-amber-700/40 bg-white/60 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-amber-800 shadow-sm backdrop-blur-md">
+                <span className="w-1.5 h-1.5 rounded-full bg-amber-600 animate-pulse" />
                 Trusted Holistic Wellness Center
               </div>
             </motion.div>
@@ -121,10 +121,10 @@ const Hero = () => {
             {/* Typography Masterpiece Headline */}
             <motion.h1
               variants={itemVariants}
-              className="font-display text-4xl sm:text-5xl md:text-6xl font-light leading-[1.1] tracking-tight text-white"
+              className="font-display text-4xl sm:text-5xl md:text-6xl font-bold leading-[1.1] tracking-tight text-[#0b1437]"
             >
               Healing Begins <br />
-              <span className="font-semibold bg-clip-text text-transparent bg-gradient-to-r from-golden via-[#e9c46a] to-deep-orange">
+              <span className="font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-[#b45309] via-[#d97706] to-[#ea580c]">
                 From Within
               </span>
             </motion.h1>
@@ -132,7 +132,7 @@ const Hero = () => {
             {/* Elite Wellness Subtitle */}
             <motion.p
               variants={itemVariants}
-              className="max-w-2xl text-sm sm:text-base leading-relaxed text-white/80 font-sans"
+              className="max-w-2xl text-sm sm:text-base leading-relaxed text-slate-900 font-medium font-sans"
             >
               Pavaki Therapy Clinic & Training Center offers Reiki Healing, Meditation,
               Crystal Healing, Tarot Guidance, Buddha Healing and Professional Training Programs
@@ -146,14 +146,14 @@ const Hero = () => {
             >
               <button
                 onClick={() => scrollTo("#services")}
-                className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-golden to-deep-orange px-8 py-3.5 text-base font-semibold text-black shadow-lg shadow-golden/20 hover:shadow-golden/40 transition-all duration-300 hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-golden focus:ring-offset-2 focus:ring-offset-[#120b06]"
+                className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-golden to-deep-orange px-8 py-3.5 text-base font-bold text-black shadow-lg shadow-golden/30 hover:shadow-golden/50 transition-all duration-300 hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-golden focus:ring-offset-2 focus:ring-offset-[#120b06]"
               >
                 Explore Services
               </button>
 
               <button
                 onClick={() => scrollTo("#contact")}
-                className="inline-flex items-center justify-center rounded-full border border-white/20 bg-white/5 hover:bg-white/10 px-8 py-3.5 text-base font-semibold text-white backdrop-blur-md transition-all duration-300 hover:border-white/40 hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-[#120b06]"
+                className="inline-flex items-center justify-center rounded-full border-2 border-[#0b1437]/70 bg-white/50 hover:bg-white/80 px-8 py-3.5 text-base font-bold text-[#0b1437] backdrop-blur-md transition-all duration-300 hover:border-[#0b1437] hover:scale-105 active:scale-95 focus:outline-none focus:ring-2 focus:ring-[#0b1437] focus:ring-offset-2 focus:ring-offset-[#120b06]"
               >
                 Book Consultation
               </button>
@@ -162,7 +162,7 @@ const Hero = () => {
             {/* Premium Stat Indicators */}
             <motion.div
               variants={statsContainerVariants}
-              className="grid grid-cols-3 gap-4 pt-6 border-t border-white/10 max-w-xl"
+              className="grid grid-cols-3 gap-4 pt-6 border-t border-slate-900/20 max-w-xl"
             >
               {STATS.map((stat) => (
                 <motion.div
@@ -170,15 +170,15 @@ const Hero = () => {
                   variants={statItemVariants}
                   className="space-y-1"
                 >
-                  <div className="flex items-center gap-2 text-white">
+                  <div className="flex items-center gap-2 text-[#0b1437]">
                     <span role="img" aria-label={stat.label} className="text-lg">
                       {stat.icon}
                     </span>
-                    <span className="text-lg sm:text-2xl font-bold font-display tracking-tight text-white">
+                    <span className="text-lg sm:text-2xl font-extrabold font-display tracking-tight text-[#0b1437]">
                       {stat.value}
                     </span>
                   </div>
-                  <p className="text-xs sm:text-sm text-white/60 font-sans leading-snug">
+                  <p className="text-xs sm:text-sm text-slate-800 font-semibold font-sans leading-snug">
                     {stat.label}
                   </p>
                 </motion.div>
@@ -236,12 +236,12 @@ const Hero = () => {
             e.preventDefault();
             scrollTo("#about");
           }}
-          className="flex flex-col items-center gap-1.5 text-xs text-white/50 tracking-widest uppercase hover:text-golden transition-colors"
+          className="flex flex-col items-center gap-1.5 text-xs text-slate-900/80 tracking-widest uppercase hover:text-amber-700 transition-colors"
           animate={{ y: [0, 8, 0] }}
           transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
         >
-          <HiArrowDown className="text-lg text-golden" />
-          <span className="font-sans font-medium">Scroll to Explore</span>
+          <HiArrowDown className="text-lg text-amber-700" />
+          <span className="font-sans font-bold">Scroll to Explore</span>
         </motion.a>
       </div>
     </section>

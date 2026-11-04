@@ -123,7 +123,7 @@ const Footer = () => {
               </li>
               <li className="flex items-start gap-2">
                 <span className="mt-1.5 w-1 h-1 rounded-full bg-golden/60 shrink-0" />
-                info@pavakitherapy.com
+                Pavaki369@gmail.com
               </li>
               <li className="flex items-start gap-2 leading-relaxed">
                 <span className="mt-1.5 w-1 h-1 rounded-full bg-golden/60 shrink-0" />
