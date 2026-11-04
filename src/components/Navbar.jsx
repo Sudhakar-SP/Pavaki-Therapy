@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { HiMenu, HiX } from "react-icons/hi";
 import { navLinks } from "../assets/data";
 import { useScrollPosition } from "../hooks/useScrollAnimation";
+import logoImg from "../assets/78315.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -64,8 +65,12 @@ const Navbar = () => {
           }}
           className="group flex items-center gap-3 focus:outline-none"
         >
-          <div className="relative flex h-11 w-11 items-center justify-center rounded-full bg-gradient-to-tr from-golden to-deep-orange shadow-md transition-transform duration-300 group-hover:scale-105">
-            <span className="font-display text-xl font-bold text-white tracking-wide">P</span>
+          <div className="relative flex h-11 w-11 items-center justify-center rounded-full shadow-md transition-transform duration-300 group-hover:scale-105">
+            <img
+              src={logoImg}
+              alt="Pavaki Therapy logo"
+              className="h-full w-full rounded-full object-cover"
+            />
             {/* Soft pulse glow around logo */}
             <div className="absolute inset-0 rounded-full bg-golden/20 animate-ping -z-10" />
           </div>
