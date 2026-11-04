@@ -210,7 +210,7 @@ export const testimonials = [
 ]
 
 export const contactInfo = {
-  phone: '+91 9442316257',
+  phone: '+91 94423 16257 / +91 78459 65369',
   email: 'Pavaki369@gmail.com',
   address: '5/575-3,Abirami Nagar, EB Colony, Collectorate, Dindigul - 624004.',
   whatsapp: '919442316257',

@@ -119,7 +119,7 @@ const Footer = () => {
             <ul className="space-y-3 text-sm text-slate-600">
               <li className="flex items-start gap-2">
                 <span className="mt-1.5 w-1 h-1 rounded-full bg-golden/60 shrink-0" />
-                +91 98765 43210
+                +91 94423 16257 / +91 78459 65369
               </li>
               <li className="flex items-start gap-2">
                 <span className="mt-1.5 w-1 h-1 rounded-full bg-golden/60 shrink-0" />
