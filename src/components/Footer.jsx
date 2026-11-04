@@ -17,7 +17,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="relative overflow-hidden bg-[#120b06] text-white/70">
+    <footer className="relative overflow-hidden bg-gradient-to-br from-[#ffffff] via-[#eff6ff] to-[#bfdbfe] text-slate-600">
       {/* Subtle Golden Ambient Glow */}
       <div className="absolute left-[10%] top-[20%] h-[300px] w-[300px] rounded-full bg-golden/5 blur-[100px] pointer-events-none" />
       <div className="absolute right-[10%] bottom-[30%] h-[250px] w-[250px] rounded-full bg-deep-orange/5 blur-[90px] pointer-events-none" />
@@ -32,7 +32,7 @@ const Footer = () => {
                 <span className="font-display text-xl font-bold text-white">P</span>
               </div>
               <div>
-                <span className="block font-display text-lg font-bold text-white tracking-tight">
+                <span className="block font-display text-lg font-bold text-slate-900 tracking-tight">
                   Pavaki Therapy
                 </span>
                 <span className="block text-[10px] font-semibold uppercase tracking-widest text-golden">
@@ -40,7 +40,7 @@ const Footer = () => {
                 </span>
               </div>
             </div>
-            <p className="text-sm leading-relaxed text-white/50 max-w-xs">
+            <p className="text-sm leading-relaxed text-slate-600 max-w-xs">
               A sanctuary for holistic healing, spiritual growth, and transformative
               wellness. Healing begins from within.
             </p>
@@ -54,7 +54,7 @@ const Footer = () => {
                     key={social.name}
                     href={social.href}
                     aria-label={social.name}
-                    className="flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white/50 transition-all duration-300 hover:border-golden/50 hover:bg-golden hover:text-white hover:shadow-md hover:shadow-golden/15"
+                    className="flex h-10 w-10 items-center justify-center rounded-full border border-blue-200 bg-white/70 text-slate-600 transition-all duration-300 hover:border-golden/50 hover:bg-golden hover:text-white hover:shadow-md hover:shadow-golden/15"
                   >
                     <Icon size={14} />
                   </a>
@@ -65,7 +65,7 @@ const Footer = () => {
 
           {/* Col 2: Quick Links */}
           <div>
-            <h4 className="mb-6 font-display text-base font-bold text-white tracking-tight">
+            <h4 className="mb-6 font-display text-base font-bold text-slate-900 tracking-tight">
               Quick Links
             </h4>
             <ul className="space-y-3">
@@ -77,9 +77,9 @@ const Footer = () => {
                       e.preventDefault();
                       handleNavClick(link.href);
                     }}
-                    className="group flex items-center gap-2 text-sm text-white/50 transition-colors duration-300 hover:text-golden"
+                    className="group flex items-center gap-2 text-sm text-slate-600 transition-colors duration-300 hover:text-golden"
                   >
-                    <span className="w-1 h-1 rounded-full bg-golden/40 group-hover:bg-golden transition-colors" />
+                    <span className="w-1 h-1 rounded-full bg-golden/60 group-hover:bg-golden transition-colors" />
                     {link.name}
                   </a>
                 </li>
@@ -89,7 +89,7 @@ const Footer = () => {
 
           {/* Col 3: Our Services */}
           <div>
-            <h4 className="mb-6 font-display text-base font-bold text-white tracking-tight">
+            <h4 className="mb-6 font-display text-base font-bold text-slate-900 tracking-tight">
               Our Services
             </h4>
             <ul className="space-y-3">
@@ -101,9 +101,9 @@ const Footer = () => {
                       e.preventDefault();
                       handleNavClick("#services");
                     }}
-                    className="group flex items-center gap-2 text-sm text-white/50 transition-colors duration-300 hover:text-golden"
+                    className="group flex items-center gap-2 text-sm text-slate-600 transition-colors duration-300 hover:text-golden"
                   >
-                    <span className="w-1 h-1 rounded-full bg-golden/40 group-hover:bg-golden transition-colors" />
+                    <span className="w-1 h-1 rounded-full bg-golden/60 group-hover:bg-golden transition-colors" />
                     {service.title}
                   </a>
                 </li>
@@ -113,37 +113,37 @@ const Footer = () => {
 
           {/* Col 4: Contact + Newsletter */}
           <div>
-            <h4 className="mb-6 font-display text-base font-bold text-white tracking-tight">
+            <h4 className="mb-6 font-display text-base font-bold text-slate-900 tracking-tight">
               Contact Info
             </h4>
-            <ul className="space-y-3 text-sm text-white/50">
+            <ul className="space-y-3 text-sm text-slate-600">
               <li className="flex items-start gap-2">
-                <span className="mt-1.5 w-1 h-1 rounded-full bg-golden/40 shrink-0" />
+                <span className="mt-1.5 w-1 h-1 rounded-full bg-golden/60 shrink-0" />
                 +91 98765 43210
               </li>
               <li className="flex items-start gap-2">
-                <span className="mt-1.5 w-1 h-1 rounded-full bg-golden/40 shrink-0" />
+                <span className="mt-1.5 w-1 h-1 rounded-full bg-golden/60 shrink-0" />
                 info@pavakitherapy.com
               </li>
               <li className="flex items-start gap-2 leading-relaxed">
-                <span className="mt-1.5 w-1 h-1 rounded-full bg-golden/40 shrink-0" />
+                <span className="mt-1.5 w-1 h-1 rounded-full bg-golden/60 shrink-0" />
                 123 Wellness Avenue, Spiritual District, Chennai, Tamil Nadu 600001
               </li>
             </ul>
 
             {/* Mini Newsletter */}
             <div className="mt-8">
-              <p className="text-xs font-bold uppercase tracking-wider text-white/40 mb-3">
+              <p className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-3">
                 Stay Connected
               </p>
               <form
                 onSubmit={(e) => e.preventDefault()}
-                className="flex overflow-hidden rounded-full border border-white/10 bg-white/5 transition-all duration-300 focus-within:border-golden/30"
+                className="flex overflow-hidden rounded-full border border-blue-200 bg-white/80 transition-all duration-300 focus-within:border-golden/60"
               >
                 <input
                   type="email"
                   placeholder="Your email"
-                  className="flex-1 bg-transparent px-4 py-3 text-xs text-white/70 placeholder:text-white/30 outline-none"
+                  className="flex-1 bg-transparent px-4 py-3 text-xs text-slate-700 placeholder:text-slate-400 outline-none"
                   aria-label="Newsletter email"
                 />
                 <button
@@ -158,11 +158,11 @@ const Footer = () => {
         </div>
 
         {/* Bottom Copyright Bar */}
-        <div className="mt-16 border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-center">
-          <p className="text-xs text-white/40">
+        <div className="mt-16 border-t border-blue-200 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-center">
+          <p className="text-xs text-slate-500">
             &copy; {currentYear} Pavaki Therapy Clinic & Training Center. All rights reserved.
           </p>
-          <p className="text-xs text-white/30 flex items-center gap-1">
+          <p className="text-xs text-slate-500 flex items-center gap-1">
             Crafted with <FaHeart className="text-golden text-[10px]" /> for Holistic Wellness
           </p>
         </div>

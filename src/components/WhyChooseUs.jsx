@@ -44,8 +44,8 @@ const WhyChooseUs = () => {
       className="section-padding relative overflow-hidden bg-[#120b06] py-24"
     >
       {/* Background warm spiritual gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-tr from-[#120b06] via-[#1d120a] to-[#2b190f]" />
-      
+      <div className="absolute inset-0 bg-gradient-to-tr from-[#ffffff] via-[#eff6ff] to-[#3b82f6]" />
+
       {/* Subtle floating blurred golden circles */}
       <div className="absolute left-[5%] top-[10%] h-[350px] w-[350px] rounded-full bg-golden/5 blur-[95px] pointer-events-none" />
       <div className="absolute right-[5%] bottom-[10%] h-[400px] w-[400px] rounded-full bg-deep-orange/5 blur-[105px] pointer-events-none" />
@@ -68,7 +68,6 @@ const WhyChooseUs = () => {
           subtitle="Why Choose Us"
           title="Your Journey to Wellness"
           description="Discover the difference of authentic, compassionate, and masterfully guided holistic care."
-          light
         />
 
         {/* Feature Cards Grid */}
@@ -85,11 +84,11 @@ const WhyChooseUs = () => {
               <motion.div
                 key={item.title}
                 variants={cardVariants}
-                whileHover={{ y: -8, border: "1px solid rgba(212, 175, 55, 0.4)" }}
-                className="group relative flex flex-col justify-between p-8 rounded-3xl border border-white/10 bg-white/5 text-center backdrop-blur-md transition-all duration-300 hover:bg-white/10 shadow-lg"
+                whileHover={{ y: -8, border: "1px solid rgba(212, 175, 55, 0.6)" }}
+                className="group relative flex flex-col justify-between p-8 rounded-3xl border border-blue-200/70 bg-white/80 text-center backdrop-blur-md transition-all duration-300 hover:bg-white shadow-lg shadow-blue-900/10"
               >
                 {/* Micro Counter Indicator */}
-                <span className="absolute top-4 right-6 text-sm font-semibold font-display text-white/20 group-hover:text-golden/50 transition-colors">
+                <span className="absolute top-4 right-6 text-sm font-semibold font-display text-slate-400 group-hover:text-golden transition-colors">
                   0{index + 1}
                 </span>
 
@@ -100,16 +99,16 @@ const WhyChooseUs = () => {
                   </div>
 
                   {/* Title & Description */}
-                  <h3 className="font-display text-lg font-bold text-white tracking-tight">
+                  <h3 className="font-display text-lg font-bold text-slate-900 tracking-tight">
                     {item.title}
                   </h3>
-                  <p className="mt-3 text-xs leading-relaxed text-white/70 font-sans">
+                  <p className="mt-3 text-xs leading-relaxed text-slate-600 font-sans">
                     {item.description}
                   </p>
                 </div>
 
                 {/* Subtle base lighting overlay */}
-                <div className="absolute inset-x-0 bottom-0 h-1 rounded-b-3xl bg-golden/0 group-hover:bg-golden/30 transition-all duration-500" />
+                <div className="absolute inset-x-0 bottom-0 h-1 rounded-b-3xl bg-golden/0 group-hover:bg-golden/40 transition-all duration-500" />
               </motion.div>
             );
           })}

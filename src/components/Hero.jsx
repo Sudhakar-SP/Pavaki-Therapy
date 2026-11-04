@@ -73,8 +73,7 @@ const Hero = () => {
     >
       {/* Background System */}
       {/* Warm Sunset Gradient Backdrop */}
-      <div className="absolute inset-0 bg-gradient-to-tr from-[#120b06] via-[#24150b] to-[#361e0e]" />
-      
+      <div className="absolute inset-0 bg-gradient-to-tr from-[#ffffff] via-[#dbeafe] to-[#2563eb]" />
       {/* Spiritual Dark Overlay for Content Readability */}
       <div className="absolute inset-0 bg-black/30 backdrop-blur-[1px]" />
 
@@ -103,7 +102,7 @@ const Hero = () => {
       {/* Main Content Grid */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-28 pb-20 lg:py-0">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-          
+
           {/* Left Column: Messaging & Actions */}
           <motion.div
             variants={containerVariants}
